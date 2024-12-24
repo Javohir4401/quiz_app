@@ -1,7 +1,8 @@
 <?php
+
 use App\Router;
-use controllers\UserController;
-use controllers\TodoController;
+use Controllers\UserController;
+use Controllers\TodoController;
 
 
 Router::get('/todos', [TodoController::class, 'show']);

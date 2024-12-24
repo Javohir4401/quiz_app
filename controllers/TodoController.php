@@ -1,9 +1,9 @@
 <?php
 
-namespace controllers;
+namespace Controllers;
 
 class TodoController{
-    public function show(){
-        return "show string from TodoController";
+    public function show(): void{
+        echo "show string from TodoController";
     }
 }

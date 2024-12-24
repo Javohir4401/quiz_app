@@ -5,7 +5,7 @@ class Router{
     public $currentRoute;
 
     public function __construct(){
-        $this->currentRoute = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); //Bu localhost/ <- Shu bo'sh joydagi yozuvni olib beradi yoki bolmasa "/" shuni oladi
+        $this->currentRoute = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     }
     public static function gerRoute(): false|array|int|string|null {
         return (new static())->currentRoute;
