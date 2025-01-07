@@ -1,9 +1,9 @@
 <?php
- use App\Router;
 
+use Src\Router;
 
- if(Router::isApiCall()){
-     require 'routers/api.php';
-     exit();
- }
- require 'routers/web.php';
+if(Router::isApiCall()){
+    require 'routers/api.php';
+    exit();
+}
+require 'routers/web.php';

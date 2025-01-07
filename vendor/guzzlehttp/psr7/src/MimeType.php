@@ -428,7 +428,7 @@ final class MimeType
         'its' => 'application/its+xml',
         'ivp' => 'application/vnd.immervision-ivp',
         'ivu' => 'application/vnd.immervision-ivu',
-        'jad' => 'text/vnd.sun.j2me.app-descriptor',
+        'jad' => 'text/vnd.sun.j2me.App-descriptor',
         'jade' => 'text/jade',
         'jam' => 'application/vnd.jam',
         'jar' => 'application/java-archive',

@@ -1,8 +1,8 @@
 <?php
 
-namespace App;
+namespace Src;
 class Router{
-    public $currentRoute;
+    public string $currentRoute;
 
     public function __construct(){
         $this->currentRoute = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
@@ -28,7 +28,7 @@ class Router{
             if ($resourceValue) {
                 $resourceRoute = str_replace('{id}', $resourceValue, $route);
                 if ($resourceRoute == self::gerRoute()) {
-                    (new $callback[0])->{$callback[1]}();
+                    (new $callback[0])->{$callback[1]}($resourceValue);
                     exit();
                 }
             }
